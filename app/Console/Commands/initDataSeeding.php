@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+use App\Http\Controllers\GivController as giv;
+
 class initDataSeeding extends Command
 {
     /**
@@ -37,6 +39,9 @@ class initDataSeeding extends Command
      */
     public function handle()
     {
+
+        $process = new giv;
+        $process->init();
         return 0;
     }
 }

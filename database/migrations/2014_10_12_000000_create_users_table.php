@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
 
         Schema::create('branches', function (Blueprint $table) {
             $table->id();
-            $table->string('client_id')->unique();
+            $table->string('giv_id')->unique()->nullable();
             $table->string('name')->unique();
             $table->string('phones')->nullable();
             $table->string('county')->nullable();

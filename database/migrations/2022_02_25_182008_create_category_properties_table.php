@@ -43,7 +43,7 @@ class CreateCategoryPropertiesTable extends Migration
             $table->boolean('specialized_features')->default(0);//ویژگی ها تخصصی
             $table->timestamps();
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.
